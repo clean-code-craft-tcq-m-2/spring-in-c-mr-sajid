@@ -5,7 +5,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     s.average = 0;
     s.min = 0;
     s.max = 0;
-    int sum = 0;
+    
     if(setlength == 0)
     {
         return NAN;
@@ -31,7 +31,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
             }
         }
         
-        s.average = (s.average/setlength)
+        s.average = (s.average/setlength);
     }
     
     return s;
