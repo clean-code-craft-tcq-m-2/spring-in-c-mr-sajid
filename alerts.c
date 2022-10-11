@@ -2,9 +2,9 @@
 
 void emailAlerter(void)
 {
-  emailAlertCallCount++;
+  emailAlertCallCount = 1;
 }
 void ledAlerter(void)
 {
-  ledAlertCallCount++;
+  ledAlertCallCount = 1;
 }
