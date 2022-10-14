@@ -10,7 +10,7 @@ int ledAlertCallCount = 0;
 * @return   Stats : result to be stored and return in structure type.
 */
 struct Stats compute_statistics(const float* numberset, int setlength) {
-    struct Stats s = {0.0};
+    struct Stats s = {0.0,0.0,0.0};
     
     if(setlength == 0)
     {
@@ -23,7 +23,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
         s.min = numberset[0];
         s.max = numberset[0];
         /*Update Min and max Value*/
-        for(int i = 0; i<setlength;i++)
+        for(int i = 0; i < setlength; i++)
         {
             /*For average*/
             s.average += numberset[i];
